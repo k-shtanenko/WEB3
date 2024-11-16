@@ -1,0 +1,9 @@
+$green: #a7c957
+
+@for $i from 1 through 5
+  div:nth-child(#{$i}) > div.object
+    background-color: lighten($green, (($i - 1) % 5) * 7%)
+
+.size
+  height: 250px
+  object-fit: cover
